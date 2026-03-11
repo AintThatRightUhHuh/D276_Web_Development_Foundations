@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James' Arroyo Portfolio - Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>James Arroyo Portfolio - Forms & Multimedia</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique odio eligendi saepe porro hic fuga enim veritatis voluptates sed? Quas quisquam dolores nostrum libero voluptatibus at. Aspernatur voluptatem doloribus ratione.</p>
+    </header>
+    <hr>
+    <section>
+        <h3 class="sectionHeader">Forms</h3>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+            <div class="form-container">
+                <!-- LEFT SIDE -->
+                 <div class="form-column">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <label for="myEmail">Email Address:</label>
+                    <input type="email" name="myEmail" id="myEmail">
+                    <label for="myPassword">Password:</label>
+                    <input type="password" name="myPassword" id="myPassword">
+                    <label for="birthDate">Birth Date:</label>
+                    <input type="date" name="birthDate" id="birthDate">
+                    <fieldset>
+                        <legend>Best Contact Time</legend>
+                        <input type="radio" name="contactTime" id="contactTimeAny" value="any" checked><label for="contactTimeAny">Anytime</label><br>
+                        <input type="radio" name="contactTime" id="contactTimeAM" value="am"><label for="contactTimeAM">AM</label><br>
+                        <input type="radio" name="contactTime" id="contactTimePM" value="pm"><label for="contactTimePM">PM</label><br>
+                        <input type="radio" name="contactTime" id="contactTimeSpecific" value="specific"><label for="contactTimeSpecific">Specific:</label>
+                        <input type="time" name="specificTime" id="specificTime">
+                    </fieldset>
+                 </div>
+                <!-- RIGHT SIDE -->
+                 <div class="form-column">
+                    <fieldset>
+                        <legend>Checkboxes</legend>
+                        <input type="checkbox" name="demoCheckBox" id="demoCb1" value="1"><label for="demoCb1">One</label>
+                        <input type="checkbox" name="demoCheckBox" id="demoCb2" value="2"><label for="demoCb2">Two</label>
+                        <input type="checkbox" name="demoCheckBox" id="demoCb3" value="3"><label for="demoCb3">Three</label>
+                    </fieldset>
+                    <label for="mySelect">Select List:</label>
+                    <select name="mySelect" id="mySelect" multiple size="3">
+                        <option value="1">Lorem, ipsum dolor.</option>
+                        <option value="2">Molestiae, incidunt velit?</option>
+                        <option value="3">Ea, blanditiis dolor.</option>
+                        <option value="4">Expedita, nulla nam.</option>
+                        <option value="5">Asperiores, minima rem.</option>
+                        <option value="6">Provident, asperiores impedit.</option>
+                        <option value="7">Dicta, voluptas et.</option>
+                    </select>
+                    <label for="myTa">Text Area:</label>
+                    <textarea name="myTa" id="myTa" cols="20" rows="4"></textarea>
+                    <label for="myFile">File Upload:</label>
+                    <input type="file" name="myFile" id="myFile">
+                 </div>
+            </div>
+            <div class="form-buttons">
+                <input type="reset" name="restBtn" id="restBtn" value="RESET FORM">
+                <input type="submit" name="submitBtn" id="submitBtn" value="SUBMIT FORM">
+
+            </div>
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h3 class="sectionHeader">Multimedia</h3>
+        <img src="images/pexels-felix-mittermeier-956981.jpg" alt="Space Image" style="width:99%">
+        <audio src="audio/fassounds-good-night-lofi-cozy-chill-music-160166.mp3" controls style="width:99%">
+                Your browser does not support the audio element.
+        </audio>
+        <video src="videos/139586-773417795_medium.mp4" controls style="width: 99%;">
+                Your browser does not support the video tag.
+        </video>
+    </section>
+
+</body>
+</html>
