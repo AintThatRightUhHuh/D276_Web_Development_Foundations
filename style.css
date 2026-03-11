@@ -26,7 +26,7 @@ h1 {
 /* This is an example of ID
 meant to be used on a single element */
 #skillsList {
-    columns: 3;
+    columns: 4;
 }
 
 /* This is an example of Class
@@ -54,6 +54,14 @@ table {
     border-spacing: 7px;
     padding: 7px;
     width: 99%;
+}
+
+#navTable {
+    margin: 14px;
+    border-collapse: separate;
+    border-spacing: 7px;
+    padding: 7px;
+    width: 20%;
 }
 
 caption {
