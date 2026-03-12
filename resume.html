@@ -14,10 +14,8 @@
         <table id="navTable">
             <tr>
                 <th>Navigation:</th>
-                <th><a href="#experience">Experience</a></th>
-                <th><a href="#education">Education</a></th>
-                <th><a href="#skills">Skills</a></th>
-                <th><a href="#contactMe">Contact</a></th>
+                <th><a href="cover-letter.html">Cover Letter</a></th>
+                <th><a href="career-goals.html">Career Goals</a></th>
             </tr>
         </table>
     </nav>
@@ -42,7 +40,7 @@
                 <li class="employerName">AT&T</li>
                     <ul>
                         <li class="positionTitle">Senior Software Engineer</li>
-                        <li>Nov 2025 - Present</li>
+                        <li><span class="highlight">Nov 2025 - Current</span></li>
                         <li>Responsibilities</li>
                             <ol>
                                 <li>Enable end-to-end local pipelines and continue to maintain those pipelines.</li>
@@ -53,7 +51,7 @@
                 <li class="employerName">AT&T</li>
                     <ul>
                         <li class="positionTitle">Senior Data Analyst</li>
-                        <li>Apr 2023 - Nov 2025</li>
+                        <li><span class="highlight">Apr 2023 - Nov 2025</span></li>
                         <li>Responsibilities</li>
                             <ol>
                                 <li>Responsible for executive reporting for senior leadership.</li>
@@ -64,7 +62,7 @@
                 <li class="employerName">AT&T</li>
                     <ul>
                         <li class="positionTitle">Sr Specialist Network Process & Quality Manager</li>
-                        <li>Oct 2013 - Apr 2023</li>
+                        <li><span class="highlight">Oct 2013 - Apr 2023</span></li>
                         <li>Responsibilities</li>
                             <ol>
                                 <li>Forecasted demand and supply for field technicians installing broadband services.</li>
@@ -79,17 +77,17 @@
         <section id="education">
             <h3 class="sectionHeader">Education</h3>
             <ul>
-                <li>Western Governors University</li>
+                <li><strong><em>Governors University</em></strong></li>
                     <ul>
                         <li>Bachelor of Science in Computer Science</li>
                         <li>Anticipated Graduation: September 2028</li>
                     </ul>
-                <li>Dallas College</li>
+                <li><strong><em>Dallas College</em></strong></li>
                     <ul>
                         <li>Associate of Science in Network Administration & Support</li>
                         <li>Graduated: May 2007</li>
                     </ul>
-                <li>Bryan Adam High School</li>
+                <li><strong><em>Bryan Adam High School</em></strong></li>
                     <ul>
                         <li>High School Diploma</li>
                         <li>Graduated: May 2004</li>
@@ -116,26 +114,48 @@
             </ul>
         </section>
         <hr>
+        <section>
+        <h3 class="sectionHeader">Skills</h3>
+        
+        <table>
+            <caption>These are my skills, there are many like them, but these are mine.</caption>
+            <tr>
+                <td>Jump Three Feet High</td>
+                <td>Cart Wheel</td>
+                <td>Python</td>
+                <td>Data Analysis</td>
+            </tr>
+            <tr>
+                <td>Bounce Basketball</td>
+                <td>Ride a bicycle</td>
+                <td>Somersault</td>
+                <td>Wash Dishes</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Tie Shoes</td>
+                <td>Write Code</td>
+                <td>Fix Electronics</td>
+            </tr>
+            </table>
+        </section>
+        <hr>
         <!-- CONTACT INFORMATION -->
         <section id="contactMe" style="margin-bottom: 1000px;">
-            <h2>Contact Information</h2>
+            <h4>Contact Information</h4>
             <div>James Arroyo</div>
             <div>6003 Parkdale Drive</div>
             <div>Dallas, TX 75227</div>
             <div>(214) 735-2903</div>
+            <div id="currentDate"></div>
+            <script>
+            const dateDiv = document.getElementById('currentDate');
+            dateDiv.textContent = 'Open to network as of: ' + new Date().toLocaleDateString();
+            console.log('Resume page loaded on ' + new Date().toLocaleString());
+            </script>
+
         </section>
     </main>
-
-    <h6>Today's Date is:</h6>
-    <div id="date-container"></div>
-    <script>
-        const currentDate = new Date();
-        const formattedDate = currentDate.toDateString(); 
-        const dateContainer = document.getElementById("date-container");
-        dateContainer.textContent = formattedDate; 
-    </script>
-
-
     <footer>
         <p>&copy; James Arroyo | (214) 735-2903 | <a href="https://www.linkedin.com/in/jameskarroyo" target="_blank">LinkedIn</a></p>
     </footer>
