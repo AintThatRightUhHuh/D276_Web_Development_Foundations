@@ -3,9 +3,9 @@
 /* This is an example of variables
 meant to be used throughout the document */
 :root {
-    --color1: #f8eee8;
-    --color2: #FD5D08;
-    --color3: #347C98;
+    --color1: #F7E0D4;
+    --color2: #FC600A;
+    --color3: #347B98;
     --color4: #1489B8;
     --color5: #092834;
 }
@@ -15,6 +15,10 @@ meant to be used on all elements */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color1);
+}
+
+fieldset {
+    background-color: #fff;
 }
 
 h1 {
@@ -107,6 +111,7 @@ td {
     gap: 20px; /* Space between columns */
     max-width: 800px; /* Optional: limits form width */
     margin: 0 auto; /* Centers the form */
+    margin: 0; /* Aligns the form container to the left */
     padding: 20px;
 }
 
@@ -130,10 +135,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"],
-input[type="date"],
-input[type="time"],
-input[type="file"],
+input[type="tel"],
 textarea,
 select {
     width: 100%; /* Full width of the column */
@@ -156,26 +158,21 @@ fieldset {
     border-radius: 4px;
 }
 
-
 legend {
     font-weight: bold;
 }
 
-
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"] {
     margin-right: 5px;
 }
 
-
-/* Buttons */
+/* Reset and Submit Buttons */
 .form-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     margin-top: 20px;
 }
-
 
 input[type="reset"],
 input[type="submit"] {

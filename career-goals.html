@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Goals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <h1>James Arroyo's Career Goals</h1>
+    </header>
+    <nav>
+        <table id="navTable">
+            <tr>
+                <th>Navigation:</th>
+                <th><a href="resume.html">Resume</a></th>
+                <th><a href="cover-letter.html">Cover Letter</a></th>
+            </tr>
+        </table>
+    </nav>
+    <main>
+        <section>
+            <h3 class="sectionHeader">Forms</h3>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <div class="form-container">
+                    <!-- LEFT SIDE -->
+                    <div class="form-column">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName">
+                        <label for="companyName">Company Name:</label>
+                        <input type="text" name="companyName" id="companyName">
+                        <label for="myEmail">Email Address:</label>
+                        <input type="email" name="myEmail" id="myEmail">
+                        <label for="myPhone">Phone:</label>
+                        <input type="tel" name="myPhone" id="myPhone">
+                    </div>
+                    
+                    
+                    <!-- RIGHT SIDE -->
+                    <div class="form-column">
+                        <fieldset>
+                            <legend>Best Contact Time</legend>
+                            <input type="radio" name="contactTime" id="contactTimeAny" value="any"><label for="contactTimeAny">Anytime</label><br>
+                            <input type="radio" name="contactTime" id="contactTimeAM" value="am"><label for="contactTimeAM">AM</label><br>
+                            <input type="radio" name="contactTime" id="contactTimePM" value="pm"><label for="contactTimePM">PM</label><br>
+                            <hr>
+                            <legend>Preferred Method</legend>
+                            <input type="radio" name="contactType" id="contactTypePhone" value="phone"><label for="contactTypePhone">Phone</label><br>
+                            <input type="radio" name="contactType" id="contactTypeEmail" value="email"><label for="contactTypeEmail">Email</label><br>
+                            <input type="radio" name="contactType" id="contactTypeText" value="text"><label for="contactTypeText">Text</label><br>
+                        </fieldset>
+                        <label for="mySelect">How soon are you looking for:</label>
+                        <select name="mySelect" id="mySelect">
+                            <option value="1">Lorem, ipsum dolor.</option>
+                            <option value="2">Molestiae, incidunt velit?</option>
+                            <option value="3">Ea, blanditiis dolor.</option>
+                            <option value="4">Expedita, nulla nam.</option>
+                            <option value="5">Asperiores, minima rem.</option>
+                            <option value="6">Provident, asperiores impedit.</option>
+                            <option value="7">Dicta, voluptas et.</option>
+                        </select>
+                        <label for="myTextArea">Additional Comments:</label>
+                        <textarea name="myTextArea" id="myTextArea" cols="20" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <input type="reset" name="restBtn" id="restBtn" value="RESET">
+                    <input type="submit" name="submitBtn" id="submitBtn" value="SUBMIT">
+
+                </div>
+            </form>
+        </section>
+        
+        <section>
+            <h2 class="sectionHeader">Image</h2>
+            <p>My first goal is to become an astronaut and travel to space.</p>
+            <img src="images/pexels-felix-mittermeier-956981.jpg" width="800px" alt="image of space with hundreds of stars and a blue nebula">
+            <div>
+                <cite style="font-size: 11px;">Photo by Felix Mittermeier: <a href="https://www.pexels.com/photo/blue-universe-956981/">Blue Universe</a></cite>
+            </div>
+            <br><br>
+            <h2 class="sectionHeader">Audio</h2>
+            <p>My next goal is to become a world famous music producer creating relaxing music.</p>
+            <audio src="audio/watermello-lofi-chill-lofi-girl-lofi-488388.mp3" controls style="width:800px">
+                    Your browser does not support the audio element.
+            </audio>
+            <div>
+            <cite style="font-size: 11px;">Audio by Watermello: <a href="https://pixabay.com/music/lofi-lofi-chill-lofi-girl-lofi-488388/">Lofi Chill - Lofi Girl - LoFi</a></cite>
+            </div>
+            <h2 class="sectionHeader">Video</h2>
+            <p>My last goal is to create videos of space with relaxing background music.</p>
+            <video src="videos/milky-way-glowing-at-night-857136.mp4" controls style="width: 800px;">
+                    Your browser does not support the video tag.
+            </video>
+            <div>
+            <cite style="font-size: 11px;">Video by Vimeo: <a href="https://www.pexels.com/video/milky-way-glowing-at-night-857136/">Milky Way Glowing at Night</a></cite>
+            </div>
+            <br><br>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;">&copy; James Arroyo | (214) 735-2903 | <a href="https://www.linkedin.com/in/jameskarroyo" target="_blank">LinkedIn</a></p>
+    </footer>
+    
+</body>
+</html>
