@@ -43,27 +43,21 @@
                     <div class="form-column">
                         <fieldset>
                             <legend>Best Contact Time</legend>
+                            <input type="radio" name="contactTime" id="contactTimeAM" value="am"><label for="contactTimeAM">A.M.</label><br>
+                            <input type="radio" name="contactTime" id="contactTimePM" value="pm"><label for="contactTimePM">P.M.</label><br>
                             <input type="radio" name="contactTime" id="contactTimeAny" value="any"><label for="contactTimeAny">Anytime</label><br>
-                            <input type="radio" name="contactTime" id="contactTimeAM" value="am"><label for="contactTimeAM">AM</label><br>
-                            <input type="radio" name="contactTime" id="contactTimePM" value="pm"><label for="contactTimePM">PM</label><br>
                             <hr>
                             <legend>Preferred Method</legend>
-                            <input type="radio" name="contactType" id="contactTypePhone" value="phone"><label for="contactTypePhone">Phone</label><br>
-                            <input type="radio" name="contactType" id="contactTypeEmail" value="email"><label for="contactTypeEmail">Email</label><br>
-                            <input type="radio" name="contactType" id="contactTypeText" value="text"><label for="contactTypeText">Text</label><br>
-                        </fieldset>
-                        <label for="mySelect">How soon are you looking for:</label>
-                        <select name="mySelect" id="mySelect">
-                            <option value="1">Lorem, ipsum dolor.</option>
-                            <option value="2">Molestiae, incidunt velit?</option>
-                            <option value="3">Ea, blanditiis dolor.</option>
-                            <option value="4">Expedita, nulla nam.</option>
-                            <option value="5">Asperiores, minima rem.</option>
-                            <option value="6">Provident, asperiores impedit.</option>
-                            <option value="7">Dicta, voluptas et.</option>
+                            <select name="mySelect" id="mySelect">
+                            <option value="Phone">Phone</option>
+                            <option value="Email">Email</option>
+                            <option value="Text">Test</option>
                         </select>
+                        </fieldset>
+                        <br>
+                        
                         <label for="myTextArea">Additional Comments:</label>
-                        <textarea name="myTextArea" id="myTextArea" cols="20" rows="4"></textarea>
+                        <textarea name="myTextArea" id="myTextArea" cols="20" rows="9"></textarea>
                     </div>
                 </div>
                 <div class="form-buttons">
