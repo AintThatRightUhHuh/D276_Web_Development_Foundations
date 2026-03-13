@@ -31,11 +31,6 @@ h4 {
     color: var(--color2);
 }
 
-/* This is an example of ID
-meant to be used on a single element */
-#skillsList {
-    columns: 4;
-}
 
 /* This is an example of Class
 meant to be used on a group of related items */
@@ -61,12 +56,13 @@ meant to be used on a group of related items */
     font-variant: small-caps;
 }
 
+/* This is an example of ID
+meant to be used on a single element */
 #navTable {
     margin: 1px;
     border-collapse: separate;
     border-spacing: 1em;
     padding: 1px;
-    width: 1px;
     white-space: nowrap;
 }
 
@@ -125,7 +121,6 @@ td {
     flex-wrap: wrap; /* Allows columns to stack on smaller screens */
     gap: 20px; /* Space between columns */
     max-width: 800px; /* Optional: limits form width */
-    margin: 0 auto; /* Centers the form */
     margin: 0; /* Aligns the form container to the left */
     padding: 20px;
 }
@@ -158,14 +153,6 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
-
-/* Radio and checkbox groups */
-.checkbox-group {
-    display: flex;
-    gap: 10px;
-}
-
 
 fieldset {
     border: 1px solid #ccc;
